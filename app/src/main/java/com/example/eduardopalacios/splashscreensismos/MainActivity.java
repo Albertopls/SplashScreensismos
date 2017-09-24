@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 
         try {
 
-            InputStream inputStream=getAssets().open("animacion.gif");
+            InputStream inputStream=getAssets().open("sismosgif.gif");
             byte[] bytes= IOUtils.toByteArray(inputStream);
             gif.setBytes(bytes);
             gif.startAnimation();
@@ -36,8 +36,8 @@ public class MainActivity extends Activity {
             @Override
             public void run() {
 
-               MainActivity.this.startActivity(new Intent(MainActivity.this,Main2Activity.class));
-                MainActivity.this.finish();
+              // MainActivity.this.startActivity(new Intent(MainActivity.this,Main2Activity.class));
+                //MainActivity.this.finish();
 
             }
         },5200);
